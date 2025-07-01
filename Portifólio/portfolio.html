@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer Guedes</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="assets/Bee.png">
+</head>
+
+<body>
+    <nav aria-label="Menu do cabeçalho">
+        <ul class="menu">
+                <li class="hideMobile"><a href="#historia">Minha História</a></li>
+                <li class="hideMobile"><a href="#hardskills">Hard Skills</a></li>
+                <li class="hideMobile"><a href="#softskills">Soft Skills</a></li>
+                <li class="hideMobile"><a href="#projetos">Projetos</a></li>  
+                <li class="hideMobile"><a href="#contato">Contato</a></li> 
+                <li class="hideDesktop" onclick=showsidebar()><a href="#menu"><img src="assets/menupreto.svg" alt="barra para abrir o menu"></a></li> 
+        </ul>
+
+        <ul class="sidebar">
+                <li onclick=hidesidebar()><a href="#menu"><img src="assets/closepreto.svg" alt="barra para fechar o menu lateral"></a></li> 
+                <li class="menucel"><a href="#historia">Minha História</a></li>
+                <li><a href="#hardskills">Hard Skills</a></li>
+                <li><a href="#softskills">Soft Skills</a></li>
+                <li><a href="#projetos">Projetos</a></li>  
+                <li><a href="#contato">Contato</a></li> 
+        
+        </ul>
+    </nav>  
+
+    <main>
+        <section class="banner">
+            <h1>Olá, me chamo Jennifer!</h1>
+            <p>Sou uma Desenvolvedora Front-End apaixonada por experiências doces e organizadas — como uma colmeia.</p>
+            <p>Transformo ideias em experiências digitais — com o cuidado e a estratégia de quem entende que até o menor detalhe importa.</p>  
+        </section>
+
+        <section class="minha-historia" id="historia">
+            <h2>Minha História</h2>
+            <p><img src="assets/JenniferPortfolio.png" alt="Jennifer, autora do Portfolio" class="imgjennifer">Tenho 26 anos, comecei a ter contato com computadores na infância. Ao crescer, a parte artística de páginas web sempre me intrigou bastante, e ao começar a mexer com o HTML do antigo Tumblr, foi a fagulha necessária para que eu começasse a me interessar por páginas web e responsividade, já que logo depois começou o amplo mercado de tablets e smartphones.
+            </p>
+        </section>
+        
+        <section class="hard-skills" id="hardskills">
+            <h2>Hard Skills</h2>
+
+            <section class="grid-colmeia">
+            <figure>
+            <img src="assets/html-logo.png" alt="Logo da linguagem de marcação HTML">
+            <figcaption>HTML</figcaption>
+            </figure>
+            
+            <figure>
+            <img src="assets/css-logo.png" alt="Logo da linguagem de marcação CSS">
+            <figcaption>CSS</figcaption>
+            </figure>
+
+            <figure>
+            <img src="assets/js-logo.png" alt="Logo da linguagem de programação JavaScript">
+            <figcaption>JavaScript</figcaption>
+            </figure>
+
+            <figure>
+            <img src="assets/react-logo.png" alt="Logo da biblioteca React">
+            <figcaption>React</figcaption>
+            </figure>
+
+            <figure class="python">
+            <img src="assets/python-logo.png" alt="Logo da linguagem de programação Python">
+            <figcaption>Python</figcaption>
+            </figure>
+            </section>
+        </section>
+
+        <section class="soft-skills" id="softskills">
+            <h2>Soft Skills</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque numquam saepe dolores fugit, hic molestias illo quo consequuntur iure? Illo atque dolore impedit soluta minima deserunt quisquam, debitis eaque reiciendis!</p>
+        </section>
+
+        <section class="projetos" id="projetos">
+            <h2>Projetos</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque numquam saepe dolores fugit, hic molestias illo quo consequuntur iure? Illo atque dolore impedit soluta minima deserunt quisquam, debitis eaque reiciendis!</p>
+        </section>
+
+        <section class="contato" id="contato">
+            <h2>Quer falar comigo?</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque numquam saepe dolores fugit, hic molestias illo quo consequuntur iure? Illo atque dolore impedit soluta minima deserunt quisquam, debitis eaque reiciendis!</p>
+        </section>
+        
+    </main>
+<footer>
+    © Jennifer da Silva Guedes — feito com carinho, mel e código. 🍯 Disponível em Mobile.
+</footer>
+<img src="assets/cursor.png" alt="cursor de abelha" class="cursor">
+<script src="script.js"></script>
+</body>
+</html>
