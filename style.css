@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap');
+
+ /*Para acompanhar toda a página*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*Navbar*/
+nav{
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li{
+  height: 60px;
+}
+
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: "Protest Riot";
+  color:#000000;
+}
+
+.sidebar a:hover{
+  color:#FEC20C;
+}
+
+.menu a:hover{
+  color: #FEC20C;
+}
+
+.menu{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000; /* Pra garantir que o menu fique acima de tudo */
+}
+
+/*Nav responsiva*/
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  z-index:999;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+}
+
+/*Conteúdo do portfólio*/
+body {
+  min-height: 100vh;
+  background-image: url(assets/wallpapercomb.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed; /*Faz o papel de parede ficar fixo e não esticado ou repetindo*/
+} 
+
+html {
+  scroll-behavior: smooth;
+}
+
+.banner{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #000000;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*Fontes*/
+p{
+  font-family: "Edu QLD Hand";
+  padding: 50px;
+}
+h1{
+  font-family: "Protest Riot";
+}
+
+h2{
+  font-family: "Protest Riot";
+  text-align: center;
+}
+
+/*Imagens*/
+.imgjennifer{
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  float:right;
+  padding: 20px;
+}
+
+.grid-colmeia {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 64px 24px;
+  justify-items: center;
+  padding: 40px;
+}
+
+.grid-colmeia figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  position: relative;
+  font-family: "Edu QLD Hand";
+}
+
+.grid-colmeia figure:nth-child(odd) {
+  position: relative;
+  top: 100px; /* desloca para formar o "ziguezague" */
+}
+
+.grid-colmeia img {
+  width: 140px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  clip-path: polygon(
+    50% 0%, 93% 25%, 93% 75%,
+    50% 100%, 7% 75%, 7% 25%
+  );
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.grid-colmeia img:hover {
+  transform: scale(1.12) rotate(-2deg);
+}
+
+.grid-colmeia figcaption {
+  margin-top: 8px;
+  font-family: "Edu QLD Hand";
+  font-size: 1rem;
+  color: #333;
+}
+
+.botao-contato img{
+  display: inline-block;
+  margin: 8px 12px;
+  padding: 12px 24px;
+  width: 125px;
+  height: auto;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+  
+}
+
+.botao-contato:hover img {
+  transform: scale(1.1);
+}
+
+.containercards img{
+  width: 100%;
+  height: auto;
+}
+
+.containercards img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+
+/*Parágrafos*/
+
+.banner p{
+  max-width: 600px;
+  font-size: larger;
+  padding: 0%;
+}
+
+.minha-historia {
+  padding: 100px 40px;
+  margin-top: 40px;
+  overflow: hidden;
+  text-align: justify;
+  font-size: larger;
+}
+
+.hard-skills {
+  padding: 100px 40px;
+  margin-top: 40px;
+}
+
+.soft-skills {
+  padding: 100px 40px;
+  margin-top: 40px;
+}
+
+.lista-soft {
+  list-style: none;
+  padding: 0;
+  font-family: "Edu QLD Hand";
+  font-size: larger;
+  line-height: 1.6;
+  text-align: center;
+}
+.lista-soft li::before {
+  content: "🐝 ";
+}
+
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; /* 🧠 Esse é o truque */
+  gap: 32px;
+  padding: 100px 40px;
+}
+
+
+.projetos h2 {
+  font-family: "Protest Riot";
+  margin-bottom: 32px;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.containercards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 🍯 altere de space-between */
+  width: 300px;
+  min-height: 500px;
+  padding: 20px;
+  background-color: #fffdf4;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.containercards:hover {
+  transform: scale(1.02);
+}
+
+.containercards h3 {
+  font-family: "Protest Riot";
+  margin-bottom: 8px;
+}
+
+.containercards p {
+  font-family: "Edu QLD Hand";
+  font-size: 1rem;
+  margin-bottom: 12px;
+  padding: 0;
+  min-height: 140px; 
+}
+
+.containercards a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 12px;
+  align-self: center;
+  background-color: #FEC20C;
+  color: black;
+  border-radius: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+
+.containercards a:hover {
+  background-color: #e5aa00;
+}
+
+.mais-projetos {
+  grid-column: 1 / -1; /* ocupa toda a largura do grid */
+  text-align: center;
+  padding: 20px 0 0;
+  font-family: "Edu QLD Hand";
+  font-size: 1.1rem;
+}
+
+.projetos article{
+  text-align: center;
+}
+
+.mais-projetos p {
+  padding: 100px 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+.contato {
+  padding: 100px 40px;
+  margin-top: 40px;
+  text-align: center;
+  
+}
+
+.contato p{
+  padding: 12px 0;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+.acesse-github {
+ text-decoration: none;
+ font-weight: bold;
+ color:#FEC20C;
+ font-size: larger;
+}
+
+
+footer{
+  font-family: "Protest Riot";
+  text-align: center;
+}
+
+/*Cursor de abelha*/
+* {
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  width: 64px;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.2s ease;
+}
+
+.menu.oculta {
+  display: none;
+}
+
+
+/*Responsividade da pagina*/
+@media (max-width:700px){
+  .hideMobile{
+    display:none;
+  }
+}
+
+@media (min-width:700px){
+  .hideDesktop{
+    display:none;
+  }
+}
+@media (max-width: 700px) {
+  .imgjennifer {
+    float: none;
+    display: block;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 700px) {
+  .imgjennifer {
+    float: none;
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background-position: left top;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 700px) {
+  .menu {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-colmeia .python {
+    position: relative;
+    top: 5px !important; /* força o valor a se aplicar no responsivo */
+    grid-column: 2;
+    grid-row: auto;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .soft-skills ul{
+    text-align:justify;
+  }
+}
+
+@media (max-width: 700px) {
+  .contato p{
+    text-align: justify;
+    font-size:large;
+  }
+}
+
+@media (max-width: 700px) {
+ 
+  .botao-contato img {
+    width: 80px;
+  }
+}

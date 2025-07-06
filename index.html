@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer Guedes</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="assets/Bee.png">
+</head>
+
+<body>
+    <nav aria-label="Menu do cabeçalho">
+        <ul class="menu">
+                <li class="hideMobile"><a href="#historia">Minha História</a></li>
+                <li class="hideMobile"><a href="#hardskills">Hard Skills</a></li>
+                <li class="hideMobile"><a href="#softskills">Soft Skills</a></li>
+                <li class="hideMobile"><a href="#projetos">Projetos</a></li>  
+                <li class="hideMobile"><a href="#contato">Contato</a></li> 
+                <li class="hideDesktop" onclick=showsidebar()><a href="#menu"><img src="assets/menupreto.svg" alt="barra para abrir o menu"></a></li> 
+        </ul>
+
+        <ul class="sidebar">
+                <li onclick=hidesidebar()><a href="#menu"><img src="assets/closepreto.svg" alt="barra para fechar o menu lateral"></a></li> 
+                <li class="menucel"><a href="#historia">Minha História</a></li>
+                <li><a href="#hardskills">Hard Skills</a></li>
+                <li><a href="#softskills">Soft Skills</a></li>
+                <li><a href="#projetos">Projetos</a></li>  
+                <li><a href="#contato">Contato</a></li> 
+        
+        </ul>
+    </nav>  
+
+    <main>
+        <section class="banner">
+            <h1>Olá, me chamo Jennifer!</h1>
+            <p>Sou uma Desenvolvedora Front-End apaixonada por experiências doces e organizadas — como uma colmeia.</p>
+            <p>Transformo ideias em experiências digitais — com o cuidado e a estratégia de quem entende que até o menor detalhe importa.</p>  
+        </section>
+
+        <section class="minha-historia" id="historia">
+            <h2>Minha História</h2>
+            <p><img src="assets/JenniferPortfolio.png" alt="Jennifer, autora do Portfolio" class="imgjennifer"> Meu primeiro contato com computadores aconteceu ainda na infância, mas foi no antigo Tumblr que encontrei minha fagulha para a descoberta de novas habilidades. Brincando com HTML para personalizar minha página neste site, descobri que podia transformar uma simples página em algo único, com cor, personalidade e propósito.</p>
+            <p>Desde então, mergulhei nos estudos de desenvolvimento Front-End, com foco em criar experiências digitais que sejam vivas, acolhedoras e diferentes do padrão minimalista que domina tantos sites atualmente. Gosto de design com emoção: interfaces que nos tragam nostalgias, sentimentos, e o mais importante: contem histórias.</p>
+            <p>Já ministrei aulas para crianças e trago dessa experiência uma visão lúdica e sensível, que se reflete nos projetos que desenvolvo. Minha intenção é unir técnica com criatividade, estrutura com sensibilidade, afinal a web também pode ser um lugar divertido e colorido.</p>
+        </section>
+        
+        <section class="hard-skills" id="hardskills">
+            <h2>Hard Skills</h2>
+
+            <section class="grid-colmeia">
+            <figure>
+            <img src="assets/html-logo.png" alt="Logo da linguagem de marcação HTML">
+            <figcaption>HTML</figcaption>
+            </figure>
+            
+            <figure>
+            <img src="assets/css-logo.png" alt="Logo da linguagem de marcação CSS">
+            <figcaption>CSS</figcaption>
+            </figure>
+
+            <figure>
+            <img src="assets/js-logo.png" alt="Logo da linguagem de programação JavaScript">
+            <figcaption>JavaScript</figcaption>
+            </figure>
+
+            <figure>
+            <img src="assets/react-logo.png" alt="Logo da biblioteca React">
+            <figcaption>React</figcaption>
+            </figure>
+
+            <figure class="python">
+            <img src="assets/python-logo.png" alt="Logo da linguagem de programação Python">
+            <figcaption>Python</figcaption>
+            </figure>
+            </section>
+        </section>
+
+        <section class="soft-skills" id="softskills">
+            <h2>Soft Skills</h2>
+            <section class="soft-skills" id="softskills">
+                <ul class="lista-soft">
+                    <li> Comunicação clara e empática, que é essencial em times e com clientes.</li>
+                    <li> Pensamento crítico, onde analiso antes de agir, mesmo nas menores decisões visuais.</li>
+                    <li> Organização: nada sai do lugar, cada favo tem seu propósito.</li>
+                    <li> Curiosidade constante, pois estou sempre estudando novas ferramentas e tendências.</li>
+                    <li> Trabalho em equipe, pois eu acredito que as melhores experiências são construídas juntas.</li>
+                </ul>
+        </section>
+
+       <h2 class="titulo-projetos">Projetos</h2> 
+        <section class="projetos" id="projetos">
+        
+                <article class="containercards">
+                    <img src="assets/como_tomar_print.jpg" alt="imagem do projeto: como tomar?" class="como_tomarimg">
+                    <h3>Como tomar?</h3>
+                    <p>Este projeto tem por finalidade democratizar a forma como os idosos têm acesso às informações dos medicamentos que tomam, criado para o projeto de extensão curricular na Universidade Santa Cecília - Santos/São Paulo.
+                    </p>
+                    <a href="https://github.com/JenniferGuedes/Como-Tomar" target="_blank" alt="abrir página no github do projeto: como tomar">Saiba mais</a><br>
+                </article>
+
+                <article class="containercards">
+                    <img src="assets/conecta_senior_print.jpg" alt="imagem do projeto: conecta sênior" class="conecta_seniorimg">
+                    <h3>Conecta Sênior</h3>
+                    <p>O Conecta Sênior é um site criado para o meu segundo projeto de Extensão Curricular da Universidade Santa Cecília - Santos/São Paulo. Seu objetivo é auxiliar o cuidador de idosos, para que ele consiga fazer uma rotina organizada para o idoso.</p>
+                    <a href="https://github.com/JenniferGuedes/Conecta-Senior" target="_blank" alt="abrir página no github do projeto: conecta sênior">Saiba mais</a>
+                </article>
+        </section>
+
+        <section>
+                <article class="mais-projetos">
+                    <p>Gostaria de ver mais projetos?
+                        <a href="https://github.com/JenniferGuedes" target="_blank" alt="acesse meu github" class="acesse-github">Acesse meu Github 🍯</a>
+                    </p>    
+                </article>  
+        </section>
+
+        <section class="contato" id="contato">
+            <h2>Quer falar comigo?</h2>
+            <p>Escolha seu favo de preferência para falar comigo, adorarei conversar com você!</p>
+            <a href="https://wa.me/5513991160842?text=Oi%20Jennifer!%20Encontrei%20seu%20portf%C3%B3lio%20e%20amei%20seu%20trabalho!%20Podemos%20conversar?" target="_blank" class="botao-contato whatsapp" aria-label="Abrir conversa no WhatsApp com Jennifer"><img src="assets/wpp.png" alt="Logo do Whatsapp"></a>
+            <a href="https://www.linkedin.com/in/jennifer-guedes/" target="_blank" class="botao-contato linkedin" aria-label="Abrir o Linkedin da Jennifer"><img src="assets/in.png" alt="Logo do Linkedin"></a>
+            <a href="https://compose.mail.yahoo.com/?to=jenniferguedes@yahoo.com" target="_blank" class="botao-contato email" aria-label="Enviar email para Jennifer"><img src="assets/email.png" alt="Ícone do Email"></a>
+        </section>
+        
+    </main>
+<footer>
+    © Jennifer da Silva Guedes — feito com carinho, mel e código. 🍯 Disponível em Mobile.
+</footer>
+<img src="assets/cursor.png" alt="cursor de abelha" class="cursor">
+<script src="script.js"></script>
+</body>
+</html>
