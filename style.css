@@ -434,3 +434,13 @@ footer{
     width: 80px;
   }
 }
+
+@media (max-width: 600px) {
+  .cursor {
+    display: none;
+  }
+
+  * {
+    cursor: auto;
+  }
+}
